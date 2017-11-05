@@ -1,0 +1,172 @@
+/* 
+*占쏙옙트 1 : 占싼놂옙체 
+*/
+@font-face {
+	font-family: 'Hanna';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
+}
+
+/*
+ * �젣二쇳븳�굹泥�
+ */
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+body{
+	overflow-x: hidden; overflow-y: hidden;
+}
+
+h3 {
+	font-family: 'Hanna';
+	text-align: center;
+	position: relative;
+	top: -22px; left: -70px;
+}
+
+.connect_1 {
+	width: 320px;
+	height: 200px;
+	margin: auto;
+	padding: 15px;
+	border-radius: 8px;
+	background: #f5f9fa;
+}
+
+.triangle{
+  width:0;
+  border-top:12x solid transparent;
+  border-right:12px solid transparent;
+  border-bottom:12px solid #c5f6e3;
+  border-left:12px solid transparent;
+  position:relative; top: -20px; left: 30px;
+}
+
+.codefind{
+	font-family: 'Jeju Gothic';
+	width: 270px;
+	height: 120px;
+	margin: auto;
+	padding: 15px;
+	border-radius: 8px;
+	background: #c5f6e3;
+	text-align: center;
+	position:relative; top: -20px; 
+}
+
+#connect{
+	font-family: 'Jeju Gothic';
+}
+
+input[type=button] {
+	font-family: 'Jeju Gothic';
+	font-size: 15px;
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	margin: 7px auto;
+	width: 60px;
+	height: 30px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input[type=button]:focus {
+	outline:0 !important;
+}
+
+input[type=button]:active {
+	background: #7cf1cd;
+	color: white;
+}
+
+input[type=submit] {
+	font-family: 'Jeju Gothic';
+	font-size: 15px;
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	margin: 7px auto;
+	width: 90px;
+	height: 30px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input[type=submit]:focus {
+	outline:0 !important;
+}
+
+input[type=submit]:active {
+	background: #7cf1cd;
+	color: white;
+}
+
+input[type=text] {
+	font-family: 'Jeju Gothic';
+	padding: 5px;
+	width: 84px;
+	margin: auto;
+	border: 2px solid #ccc;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input[type=text]:focus {
+	outline:0 !important;
+	border-color: #19cc95;
+	border-radius: 5px;
+}
+
+button[type=button] {
+	font-family: 'Jeju Gothic';
+	font-size: 15px;
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	width: 80px;
+	height: 30px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+button[type=button]:focus {
+	outline:0 !important;
+}
+
+button[type=button]:active {
+	background: #7cf1cd;
+	color: white;
+}
+
+span {
+	position:relative; top: -110px; left: 50px; 	
+}
+
+#findconnect {
+	position: relative;
+	top: -100px;
+	right: -195px;
+}

@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+span {
+	position:relative; top: 17px; left: 20px;		
+}
+
+label {
+	position:relative; top: 5px; left: 5px;
+}
+
+samp {
+	font-family: 'Jeju Gothic';
+	position:relative; top: -23px; left: 250px;
+}
+
+.code {
+	font-family: 'Jeju Gothic';
+	width: 350px;
+	height: 53px;
+	background: #f5f9fa;	
+	position:relative; top: 10px; left: 10px;
+}
+
+.code_1 {
+	width: 58px;
+	height: 25px;
+	background: #c5f6e3;
+	position:relative;  top: -4px; left: 185px;
+}

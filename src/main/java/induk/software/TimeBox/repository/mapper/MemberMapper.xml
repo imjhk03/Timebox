@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="induk.software.TimeBox.repository.mapper.MemberMapper">
+	
+    <insert id="join" parameterType="induk.software.TimeBox.model.MemberDTO">
+        INSERT INTO member(name, birthday, email, pw, tel, univer, major,hakbun, sinbun) 
+        VALUES(#{name}, #{birthday}, #{email}, #{pw}, #{tel}, #{univer}, #{major}, #{hakbun},#{sinbun})
+    </insert>
+    
+      <insert id="insertMysch" parameterType="induk.software.TimeBox.model.myschDTO">
+        INSERT INTO mysch(mytt_no, mteach, msubject, mstime, metime, mday,place,email) 
+        VALUES(mytt.nextval,#{mteach}, #{msubject}, #{mstime}, #{metime}, #{mday}, #{place},#{email})
+    </insert>
+    
+     <select id="selectMyschData" parameterType="String" resultType="induk.software.TimeBox.model.myschDTO">
+   		select * from mysch where email = #{email}
+   	 </select>
+    
+     <select id="selecthak" resultType="hashmap">
+   		select * from univ
+   	 </select>
+   	 
+   	  <select id="selectmajor" resultType="hashmap">
+   		select * from major
+   	 </select>
+   	 
+   	   <select id="seltt" resultType="hashmap">
+   		select * from schedule where uni_no = #{uni_no}
+   	 </select>
+   	 
+   	 <select id ="login" parameterType="induk.software.TimeBox.model.MemberDTO" resultType="induk.software.TimeBox.model.MemberDTO">
+   	 	select * from member where email = #{email} and pw = #{pw}
+   	 </select>
+   	 
+   	<select id ="emailCheck" parameterType="String" resultType="Integer">
+   		 SELECT COUNT(*) FROM member WHERE email = #{email}
+    </select>  
+    
+     <select id ="selectTTdata" parameterType="int" resultType="induk.software.TimeBox.model.ttDTO">
+   		 SELECT * FROM schedule WHERE tt_no = #{tt_no}
+    </select>  
+    
+    <update id="update" parameterType="induk.software.TimeBox.model.MemberDTO">
+    
+     UPDATE member SET pw= #{pw}, name= #{name},birthday = #{birthday},univer=#{univer},major=#{major},tel= #{tel} where email= #{email}
+    
+    </update>
+    
+    <delete id="delete">
+    
+    delete from member where pw = #{pw} and email = #{email}
+    
+    </delete>
+   	 
+</mapper>
+
+<!--  SELECT * FROM member WHERE name LIKE #{name} limit 0,10 -->

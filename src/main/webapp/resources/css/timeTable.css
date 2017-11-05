@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+
+/* 
+*폰트 1 : 한나체 
+*/
+@font-face {
+	font-family: 'Hanna';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
+}
+
+/*
+ * 제주한나체
+ */
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+#winobj {
+	idth:400px; height:30px; text-align:center;  border: 1px solid #cfcfcf; vertical-align:middle; line-height:29px; 
+}
+
+body {
+	font-family: 'Jeju Gothic';
+}
+
+#header {
+	padding: 10px 0px;
+}
+
+#page-header {
+	margin: auto;
+	width: 975px;
+	height: 50px;
+	padding: 0px 15px;
+}
+
+#pageHeaderLogo {
+	display: inline-block;
+}
+
+#pageHeaderAccount {
+	float: right;
+	text-align: right;
+}
+
+.aName {
+	font-size: 18px;
+	color: #19cc95;
+}
+
+.aName:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#accountMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#accountMenu li {
+	font-size: 13px;
+}
+
+#accountMenu li a {
+	text-decoration: none;
+	color: black;
+}
+
+#accountMenu li a:hover {
+	text-decoration: underline;
+	color: #19cc95;
+	cursor: pointer;
+}
+
+
+#section {
+	padding: 0px 5px;
+	width: 95%;
+}
+
+#page-content {
+	width: 975px;
+	margin: auto;
+}
+
+table {
+	margin: auto;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+table, td, tr {
+	font-family: 'Jeju Gothic';
+	text-align: center;
+	border-spacing: 3px;
+}
+
+td {
+	width: 70px;
+	height: 34px;
+	/* color: white; */
+}
+
+td:hover {
+	background-color: #19cc95;
+}
+
+#timeTableSetting {
+	width: 25px;
+	float: right;
+	position:relative; left: -193px; top: -573px;
+}
+
+#timeTableSetting:hover {
+	cursor: pointer;
+}
+
+#footer {
+}

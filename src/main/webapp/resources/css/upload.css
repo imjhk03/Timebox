@@ -1,0 +1,115 @@
+/* 
+*��Ʈ 1 : �ѳ�ü 
+*/
+@font-face {
+	font-family: 'Hanna';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
+}
+
+/*
+ * ���ְ��ü
+ */
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+body{
+	overflow-x:hidden; overflow-y:auto
+}
+
+.file_input_textbox {
+	font-family: 'Jeju Gothic';
+	position: relative;
+	top: 70px; left: 8px;
+}
+
+.file_input_div {
+	font-family: 'Jeju Gothic';
+	position: relative;
+	top: 40px;
+	left: 265px;
+	width: 60px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.file_input_button {
+	font-family: 'Jeju Gothic';
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	top: 0px;
+	background-color: #c5f6e3;
+	color: #FFFFFF;
+	border-style: solid;
+}
+
+.file_input_hidden {
+	font-family: 'Jeju Gothic';
+	font-size: 45px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	-ms-filter: "alpha(opacity=0)";
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+}
+
+input[type=text] {
+	font-family: 'Jeju Gothic';
+	padding: 5px;
+	border: 2px solid #ccc;
+	width: 245px;
+	height: 16px;
+}
+
+input[type=text]:focus {
+	outline: 0 !important;
+	border-color: #c5f6e3;
+}
+
+input[type=submit] {
+	font-family: 'Jeju Gothic';
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.file_upload{
+	position: relative;
+	top: 80px;
+	left: 110px;
+}
+
+input[type=submit]:focus {
+	outline:0 !important;
+}
+
+input[type=submit]:active {
+	background: #7cf1cd;
+	color: white;
+}

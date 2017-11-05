@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+		http://www.springframework.org/schema/tx htttp://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd 
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/beans/spring-util.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+
+	<context:property-placeholder location="jdbc.properties" />
+	<beans:bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<beans:property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<beans:property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<beans:property name="username" value="jihyo" />
+		<beans:property name="password" value="wlgy1854" />
+	</beans:bean>
+
+	<beans:bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<beans:property name="dataSource" ref="dataSource" />
+		<beans:property name="configLocation" value="classpath:/mybatis-config.xml" />
+		<beans:property name="mapperLocations">
+			<beans:array>
+				<beans:value>classpath:induk/software/TimeBox/repository/mapper/MemberMapper.xml</beans:value>
+				<beans:value>classpath:induk/software/TimeBox/repository/mapper/BoardMapper.xml</beans:value>
+			</beans:array>
+		</beans:property>
+	</beans:bean>
+
+	<beans:bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<beans:constructor-arg name="sqlSessionFactory"
+			ref="sqlSessionFactoryBean" />
+	</beans:bean>
+
+	<beans:bean id="memberMapper"
+		class="induk.software.TimeBox.repository.mapper.MemberMapperImpl">
+		<beans:property name="sqlSession" ref="sqlSession" />
+	</beans:bean>
+	
+	<beans:bean id="memberService"
+		class="induk.software.TimeBox.service.MemberServiceImpl" autowire="byType" />
+		
+	<beans:bean id="boardMapper"
+		class="induk.software.TimeBox.repository.mapper.BoardMapperImpl">
+		<beans:property name="sqlSession" ref="sqlSession" />
+	</beans:bean>
+	
+	<beans:bean id="boardService"
+		class="induk.software.TimeBox.service.BoardServiceImpl" autowire="byType" />
+			
+	<context:component-scan base-package="induk.software.TimeBox" />
+</beans:beans>

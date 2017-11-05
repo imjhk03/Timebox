@@ -1,0 +1,275 @@
+@CHARSET "UTF-8";
+
+/* 
+*폰트 1 : 한나체 
+*/
+
+@font-face {
+	font-family: 'Hanna';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
+}
+
+/*
+ * 제주한나체
+ */
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+body {
+	font-family: 'Jeju Gothic';
+}
+
+span {
+	font-family: 'Jeju Gothic';
+	position:relative; left: 50px;
+	
+}
+
+#header {
+	padding: 10px 0px;
+	border: none;
+	height: 25px;
+}
+
+#page-header {
+	margin: auto;
+	width: 975px;
+	padding: 0px 15px;
+}
+
+#pageHeaderLogo {
+	display: inline-block;
+}
+
+#pageHeaderAccount {
+	width: 125px;
+	float: right;
+	text-align: right;
+}
+
+.aName {
+	font-size: 18px;
+	color: #19cc95;
+}
+
+.aName:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#accountMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#accountMenu li {
+	display: inline-block;
+	width: 57px;
+	font-size: 13px;
+}
+
+#accountMenu li a {
+	text-decoration: none;
+	color: black;
+}
+
+#accountMenu li a:hover {
+	text-decoration: underline;
+	color: #19cc95;
+	cursor: pointer;
+}
+
+
+#section {
+	width: 95%;
+	padding: 5px;
+	border: none;
+}
+
+#page-content {
+	margin: auto;
+	width: 975px;
+	height: 100%;
+}
+
+#pageContentHeader {
+	margin: auto;
+	padding-top: 5px;
+	height: 45px;
+}
+
+#pageContentHeader div {
+	display: inline-block;
+}
+
+#fileRoute {
+	float: left;
+	margin-left: 10px;
+	
+	font-size: 20px;
+}
+
+#menubar {
+	float: right;
+}
+
+.browse-file input:checked + #Dday {
+  opacity: 1;
+}
+
+#contentMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contentMenu li {
+	display: inline-block;
+	opacity: 0.5;
+}
+
+#contentMenu li img {
+	height: 35px;
+}
+
+#contentMenu li:hover {
+    cursor: pointer;
+}
+
+#contentMenu #upload {
+	opacity: 1;
+}
+
+#fileBrowse {
+	margin: auto;
+}
+
+#browseHeader {
+	background-color: #f7f7f7;
+	padding: 0px 5px;
+}
+
+#browseListTitle {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#browseListTitle li {
+	display: inline-block;
+	color: #3c3c3c;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+#browseListTitle li:first-child {
+	width: 100px;
+	text-align: center;
+}
+
+#browseListTitle li:nth-child(2) {
+	width: 500px;
+}
+
+#browseListTitle li:nth-child(3) {
+	width: 160px;
+}
+
+#browseListTitle li:nth-child(4) {
+	width: 180px;
+}
+
+
+#fileContent {
+	margin: auto;
+	padding: 0px 5px;
+}
+
+#fileList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#fileList li {
+	margin: auto;
+	display: inline;
+	
+	font-size: 14px;
+
+	height: 35px;
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+#fileList li div{
+	display: inline-block;
+}
+
+#fileList li div:first-child {
+	width: 100px;
+	text-align: center;
+}
+
+#fileList li div:nth-child(2) {
+	width: 500px;
+}
+
+#fileList li div:nth-child(3) {
+	width: 160px;
+}
+
+#fileList li div:nth-child(4) {
+	width: 180px;
+}
+
+#fileList li div img {
+	/*height: 25px;*/
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+
+#dialog {
+	display: none;
+}
+#thchkbox{
+	width: 100px;
+	text-align: center;
+}
+#thkind{
+	width: 160px;
+	text-align: center;
+
+}
+#thname{
+	width: 500px;
+	text-align: center;
+}
+#thdate{
+	width: 180px;
+	text-align: center;
+}

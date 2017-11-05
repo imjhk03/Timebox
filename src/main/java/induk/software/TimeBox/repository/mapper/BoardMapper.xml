@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="induk.software.movie.repository.mapper.BoardMapper">
+
+    <insert id="boardInsert" parameterType="induk.software.TimeBox.model.g_boardDTO">
+   		INSERT INTO g_board(g_no,g_code,email)VALUES(g_board_seq.nextval,#{g_code},#{email})
+    </insert>
+    
+   <insert id="insertDay" parameterType="induk.software.TimeBox.model.ddayDTO">
+   		INSERT INTO dday(dday_no,startday,endday,comm)VALUES(dday_seq.nextval,#{startday},#{endday},#{comm})
+    </insert>
+    
+     <insert id="save" parameterType="induk.software.TimeBox.model.saveDTO">
+   		INSERT INTO save(save_no,code,email)VALUES(save_seq.nextval,#{code},#{email})
+    </insert>
+    
+     <select id="select" parameterType="String" resultType="induk.software.TimeBox.model.g_boardDTO">
+   		select * from save; 
+   	 </select>
+    
+      <insert id="fileInsert" parameterType="induk.software.TimeBox.model.g_boardDTO">
+   		INSERT INTO g_file(g_gno,g_name,g_no,g_date)VALUES(g_file_seq.nextval,#{g_name},#{g_no},sysdate)
+    </insert>
+    
+     <select id="taskList" resultType="hashMap">
+   	select * from g_file
+   	 </select>
+   	 
+   	     <insert id="ffileInsert" parameterType="induk.software.TimeBox.model.f_boardDTO">
+   		INSERT INTO f_file(f_fno,f_name,f_no,f_date)VALUES(f_file_seq.nextval,#{f_name},#{f_no},sysdate)
+    </insert>
+    
+     <select id="fileList" resultType="hashMap">
+   	select * from f_file
+   	 </select>
+   	 
+   	   <select id="selectDay" resultType="hashMap">
+   	select * from dday
+   	 </select>
+ 
+     <select id="searchCode" parameterType="String" resultType="induk.software.TimeBox.model.g_boardDTO">
+   		select * from g_board where g_code = #{g_code}
+   	 </select>
+    
+    
+    
+   
+</mapper>

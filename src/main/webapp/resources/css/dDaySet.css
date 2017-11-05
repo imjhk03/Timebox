@@ -1,0 +1,180 @@
+@CHARSET "UTF-8";
+
+/* 
+*폰트 1 : 한나체 
+*/
+@font-face {
+	font-family: 'Hanna';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
+}
+
+/*
+ * 제주한나체
+ */
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+
+body{
+	overflow-x:hidden; overflow-y:auto
+}
+
+h3 {
+	font-family: 'Jeju Gothic';		
+}
+
+.d_day_1 {
+	font-family: 'Jeju Gothic';
+	width: 310px;
+	height: 20px;
+	padding: 15px;
+	border-radius: 8px;
+	background: #c5f6e3;
+	position:relative; top: 10px; left: 17px;	
+	text-align: center;
+}
+
+.d_day_1 h3 {
+	position:relative; top: -28px; left: 10px;	
+}
+
+.triangle_1{
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 12px solid #c5f6e3;
+	position:relative; top: 33px; left: 17px;	
+}
+
+.d_day_2 {
+	font-family: 'Jeju Gothic';
+	width: 310px;
+	height: 20px;
+	padding: 15px;
+	border-radius: 8px;
+	background: #c5f6e3;
+	position:relative; top: 60px; left: 17px;	
+	text-align: center;
+}
+
+.d_day_2 h3 {
+	position:relative; top: -28px; left: 10px;	
+}
+
+.triangle_2{
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 12px solid #c5f6e3;
+	position:relative; top: 35px; left: 17px;		
+}
+
+.d_day_set{
+	position:relative; top: 35px; left: 23px;	
+}
+
+.d_day_del{
+	position:relative; top: 90px; left: 23px;
+}
+
+select {
+	font-family: 'Jeju Gothic';
+	width: 83px;
+	height: 29px;
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;	
+}
+
+select:focus {
+	outline:0 !important;
+	border-color: #19cc95;
+	border-radius: 5px;
+}
+
+input[type=text] {
+	font-family: 'Jeju Gothic';
+	height: 15px;
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type=text]:focus {
+	outline:0 !important;
+	border-color: #19cc95;
+	border-radius: 5px;
+}
+
+input[type=submit] {
+	font-family: 'Jeju Gothic';
+	font-size: 10pt;
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	width: 55px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type=submit]:focus {
+	outline:0 !important;
+}
+
+input[type=submit]:active {
+	background: #7cf1cd;
+	color: white;
+}
+
+input[type=button] {
+	font-family: 'Jeju Gothic';
+	font-size: 10pt;
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	width: 55px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type=button]:focus {
+	outline:0 !important;
+}
+
+input[type=button]:active {
+	background: #7cf1cd;
+	color: white;
+}
+
+.ddayset {
+	font-family: 'Jeju Gothic';
+	position:relative; left: 60px; top: 90px;
+}
+
+.ddayset_1 {
+	position:relative; left: 60px; top: 20px;
+}

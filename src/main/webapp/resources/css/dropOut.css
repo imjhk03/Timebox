@@ -1,0 +1,155 @@
+/* 
+*占쏙옙트 1 : 占싼놂옙체 
+*/
+@font-face {
+	font-family: 'Hanna';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
+}
+
+/*
+ * 占쏙옙占쌍곤옙占시�
+ */
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+#header {
+	/* Internet Explorer 10 */
+	-ms-flex-pack: left;
+	
+	/* Firefox */
+	-moz-box-pack: left;
+	
+	/* Safari, Opera, and Chrome */
+	-webkit-box-pack: left;
+	
+	/* W3C */
+	box-pack: left;
+}
+
+.email{
+	font-family: 'Hanna';
+	width: 350px;
+	height: 165px;
+	background: #f5f9fa;
+	margin: 30px auto;
+	border-radius: 8px;
+}
+
+span {
+	font-size: 18px;	
+}
+
+.emailcheck{
+	position:relative; top: 15px; left: 15px;
+}
+
+::-webkit-input-placeholder {
+	font-family: 'Jeju Gothic';
+}
+
+.triangle{
+  width:0;
+  border-top:12x solid transparent;
+  border-right:12px solid transparent;
+  border-bottom:12px solid #c5f6e3;
+  border-left:12px solid transparent;
+  position:relative; left: 30px; top: 25px;
+}
+
+.emailcheck_search {
+	font-family: 'Jeju Gothic';
+	width: 300px;
+	height: 70px;
+	margin: auto;
+	margin-top: 25px;
+	padding: 15px;
+	border-radius: 8px;
+	background: #c5f6e3;
+	text-align: center;
+}
+
+input[type=password] {
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type=password]:focus {
+	outline:0 !important;
+	border-color: #19cc95;
+	border-radius: 5px;
+}
+
+input[type=button] {
+	font-family: 'Jeju Gothic';
+	background: #ccc;
+	border: 0 none;
+	width: 95px;
+	height: 28px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: auto;
+}
+
+input[type=button]:focus {
+	outline:0 !important;
+}
+
+input[type=button]:active {
+	background: #7cf1cd;
+	color: white;
+}
+
+input[type=submit] {
+	font-family: 'Jeju Gothic';
+	background: #ccc;
+	border: 0 none;
+	width: 95px;
+	height: 28px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: auto;
+}
+
+input[type=submit]:focus {
+	outline:0 !important;
+}
+
+input[type=submit]:active {
+	background: #7cf1cd;
+	color: white;
+}
+
+#set{
+	width: 70px;	
+}
+
+#can{
+	width: 70px;	
+}
+
+.emailcheck_ok{
+	position:relative; left: 95px; top: -40px;
+}

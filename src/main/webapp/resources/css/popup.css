@@ -1,0 +1,15 @@
+#header, #footer {
+	display: imline-block;
+	width: 100%;
+	height: 8vh;
+	margin: 5px auto;
+	border: 1px solid black;
+	/* background: #19cc95; */
+}
+
+#section {
+	display: imline-block;
+	width: 100%;
+	margin: 0px auto;
+	border: 1px solid black;
+}

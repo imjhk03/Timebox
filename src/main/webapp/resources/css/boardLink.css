@@ -1,0 +1,88 @@
+/* 
+*占쏙옙트 1 : 占싼놂옙체 
+*/
+@font-face {
+	font-family: 'Hanna';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
+}
+
+/*
+ * �젣二쇳븳�굹泥�
+ */
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.middle {
+	position:relative; left: 75px;
+}
+
+input[type=button] {
+	font-family: 'Jeju Gothic';
+	font-size: 15px;
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	width: 160px;
+	height: 200px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+
+input[type=button]:focus {
+	outline:0 !important;
+}
+
+input[type=button]:active {
+	background: #7cf1cd;
+	color: white;
+}
+
+button[type=button] {
+	font-family: 'Jeju Gothic';
+	font-size: 15px;
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	width: 200px;
+	height: 35px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+
+button[type=button]:focus {
+	outline:0 !important;
+}
+
+button[type=button]:active {
+	background: #7cf1cd;
+	color: white;
+}

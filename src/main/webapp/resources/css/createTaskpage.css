@@ -1,0 +1,218 @@
+/* 
+*�룿�듃 1 : �븳�굹泥� 
+*/
+
+@font-face {
+	font-family: 'Hanna';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot);
+	src: url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2) format('woff2'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff) format('woff'),
+		url(//fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf) format('truetype');
+}
+
+/*
+ * �젣二쇳븳�굹泥�
+ */
+@font-face {
+	font-family: 'Jeju Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf)
+		format('truetype');
+}
+
+#header {
+	/* Internet Explorer 10 */
+	-ms-flex-pack: left;
+	
+	/* Firefox */
+	-moz-box-pack: left;
+	
+	/* Safari, Opera, and Chrome */
+	-webkit-box-pack: left;
+	
+	/* W3C */
+	box-pack: left;
+	
+	padding: 10px 0px;
+}
+
+#connect_form {
+	padding: 20px;
+	display: block;
+}
+
+.connect {
+	font-family: 'Jeju Gothic';
+	font-size: 25px;
+	width: 450px;
+	height: 350px;
+	margin: auto;
+	background: #f5f9fa;
+	padding: 20px;
+	border-radius: 8px;
+	text-align: left;
+}
+
+.top {
+	width: 100%;
+	height: 20%;
+	font-size: 18pt;
+	font-align: left;
+}
+
+.connect_find{
+	position:relative; top: 10px;
+}
+
+.connect_select{
+	position:relative; top: 20px;
+}
+
+.connect_time{
+	position:relative; top: 30px;
+}
+
+.triangle{
+  width:0;
+  border-top:12x solid transparent;
+  border-right:12px solid transparent;
+  border-bottom:12px solid #c5f6e3;
+  border-left:12px solid transparent;
+  position:relative; left: 120px; top: -40px;
+}
+
+.connect_1 {
+	font-family: 'Jeju Gothic';
+	width: 380px;
+	height: 270px;
+	margin: auto;
+	padding: 15px;
+	border-radius: 8px;
+	background: #c5f6e3;
+	text-align: center;
+	position:relative; top: -40px;
+}
+
+.radio {
+	font-size: 11pt;
+	font-family: 'Jeju Gothic';
+}
+
+#t1{
+	width: 100px;
+}
+
+#t1_1{
+	width: 70px;
+}
+
+#t2{
+	width: 190px;
+}
+
+.connect_time{
+	font-family: 'Jeju Gothic';
+	font-size: 10pt;
+	margin-left: -80px;
+}
+
+.connect_submit{
+	margin-right: -90px;
+}
+
+#lb1{
+	position:relative; left: 23px;
+}
+
+#lb2{
+	position:relative; left: 45px;
+}
+
+#lb3{
+	position:relative; left: 38px;
+}
+
+#time{
+	width: 240px;
+	position:relative; left: 65px;
+}
+
+#peo{
+	width: 240px;
+	position:relative; left: 45px; 
+}
+
+#sub{
+	width: 240px;
+	position:relative; left: 52px;
+}
+
+input[type=text] {
+	margin-left: 5px;
+	font-family: 'Jeju Gothic';
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	width: 150px;
+}
+
+input[type=text]:focus {
+	outline:0 !important;
+	border-color: #19cc95;
+	border-radius: 5px;
+}
+
+input[type=submit] {
+	margin-left: 5px;
+	font-family: 'Jeju Gothic';
+	margin-top: 3px;
+	padding: 2px 35px;
+	background: #ccc;
+	border: 0 none;
+	height: 27px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type=submit]:focus {
+	outline:0 !important;
+}
+
+input[type=submit]:hover {
+	background: #7cf1cd;
+	color: white;
+}
+
+input[type=button] {
+	margin-left: 5px;
+	font-family: 'Jeju Gothic';
+	margin-top: 3px;
+	padding: 2px 35px;
+	background: #ccc;
+	border: 0 none;
+	height: 27px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type=button]:focus {
+	outline:0 !important;
+}
+
+input[type=button]:hover {
+	background: #7cf1cd;
+	color: white;
+}

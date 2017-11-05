@@ -1,0 +1,16 @@
+#emailform {
+	margin: auto;
+	width: 600px;
+	height: 450px;
+	background: pink;
+}
+
+#emailok {
+	font-size: 15px;
+	color: red;
+}
+
+#footer {
+	height: 150px;
+	clear: left;
+}
